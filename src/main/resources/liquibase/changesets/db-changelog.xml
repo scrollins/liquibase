@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+    <changeSet id="1" author="crollins">
+        <comment>Changeset 1</comment>
+        <createTable tableName="TRADE">
+            <column autoIncrement="true" name="ID" type="INT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_TRADE"/>
+            </column>
+            <column name="TRADE_TYPE" type="VARCHAR(10)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PRICE" type="DECIMAL(19,2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CLIENT" type="VARCHAR(10)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="MARGIN" type="DECIMAL(5,2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="MARGIN111" type="DECIMAL(5,2)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        
+    </changeSet>
+    
+      <changeSet id="2" author="crollins">
+    <sql>
+    ALTER TABLE ADD COLUMN TEST VARCHAR(20)
+    </sql>
+    
+    
+    
+    </changeSet>
+    
+    
+      
+</databaseChangeLog>
