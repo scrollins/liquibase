@@ -28,15 +28,5 @@
         
     </changeSet>
     
-      <changeSet id="2" author="crollins">
-    <sql>
-    ALTER TABLE ADD COLUMN TEST VARCHAR(20)
-    </sql>
-    
-    
-    
-    </changeSet>
-    
-    
       
 </databaseChangeLog>
